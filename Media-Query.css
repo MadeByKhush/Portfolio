@@ -1,0 +1,504 @@
+/* Default desktop styling: Already there */
+
+/* Tablet: 991px se chhoti screen ke liye */
+@media (max-width: 1096px) {
+
+    /* Yaha tablet ke liye changes likh */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 3rem;
+        border-radius: 1rem;
+        text-align: center;
+        box-shadow: 0px 1px 43px 5px rgba(46, 220, 110, 0.479);
+        margin-top: 2rem;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        list-style: none;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: var(--color-2);
+        padding: 1rem;
+        border-radius: 1rem;
+        z-index: 1;
+    }
+
+    .ham-burger-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: -6rem;
+        filter: invert(1);
+    }
+
+    .container {
+        justify-content: space-around;
+    }
+
+    .logo {
+        margin-left: -5rem;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+    }
+
+    .about-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-head {
+        font-size: 5rem;
+        /* margin-left: 7rem; */
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-right: 5.5rem;
+    }
+
+    .about-para {
+        justify-content: center;
+        text-align: center;
+        padding-right: 6rem;
+    }
+
+    .about-image-container {
+        justify-content: center;
+        align-items: center;
+        padding-right: 5rem;
+    }
+
+    .about-contact-items {
+        padding-top: 3rem;
+        padding-right: 5rem;
+        justify-content: center;
+    }
+
+    .skills-section {
+        padding-top: -15rem;
+    }
+
+    .skills-category {
+        margin-top: 5rem;
+    }
+
+    .skills-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: auto;
+        /* Tablet pe height fix mat karo */
+    }
+
+    .section-title {
+        font-size: 6rem;
+        margin-bottom: -2rem;
+        margin-right: 4rem;
+        text-align: center;
+    }
+
+    .section-title-techstack {
+        font-size: 6rem;
+        margin-bottom: -2rem;
+        margin-right: 0rem;
+        text-align: center;
+    }
+
+    .category-heading {
+        font-size: 1.5rem;
+        padding-right: 0;
+        /* Tablet pe right padding hata do */
+    }
+
+    .skills-flex {
+        justify-content: left;
+        /* left mein items */
+        gap: 2rem;
+        /* Gap thoda kam karo */
+    }
+
+    .skill-card {
+        flex: 1 1 120px;
+        /* ⭐⭐ important ⭐⭐ */
+        max-width: 150px;
+        /* max width fix karo */
+        height: auto;
+        /* height auto, kyunki img hi size control karega */
+        padding: 1rem;
+        /* extra padding for img */
+    }
+
+    .skill-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .skill-name {
+        font-size: 0.8rem;
+    }
+
+    .projects-container {
+        display: flex;
+        justify-content: center;
+        margin-right: 3rem;
+    }
+
+    .project-card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-title {
+        padding-left: 2rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .social-playground {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: 16rem;
+    }
+
+    .form {
+        margin-right: 5rem;
+    }
+
+    .contact-title {
+        /* margin-left: 12rem; */
+        margin-right: auto;
+    }
+
+    .contact-container {
+        flex-direction: column-reverse;
+    }
+
+    .social-playground {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-links-container {
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+/* Mobile: 767px se chhoti screen ke liye */
+@media (max-width: 789px) {
+
+    /* Mobile ke liye changes likh */
+    .about-head {
+        margin-right: 4rem;
+        font-size: 4rem;
+    }
+
+    .contact-title {
+        font-size: 3rem;
+        padding-right: 0rem;
+    }
+
+        .section-title {
+        font-size: 3rem;
+        margin-right: 4rem;
+    }
+
+
+    .section-title-techstack {
+        font-size: 4rem;
+    }
+
+
+    .logo {
+        margin-right: 2rem;
+    }
+
+    .social-playground {
+        margin: auto;
+        margin-right: 12rem;
+    }
+
+    .social-links-container {
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 669px) {
+    .social-playground {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-links-container {
+        justify-content: flex-start;
+        padding-right: 2rem;
+    }
+}
+
+/* Mobile portrait: 575px se chhoti screen ke liye */
+@media (max-width: 575px) {
+
+    /* Aur bhi tight layout changes yaha */
+    .ham-burger {
+        margin-right: 1rem;
+    }
+
+    .logo {
+        margin-right: -8rem;
+    }
+
+    .text {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about-head {
+        text-align: center;
+        padding: 0rem;
+    }
+
+    .about-para {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 1rem;
+    }
+
+    .section-title {
+        justify-content: center;
+        margin-right: 4rem;
+    }
+
+    .about-contact-items {
+        font-size: 0.8rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-items img {
+        height: 1.5rem;
+        width: auto;
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
+        padding-left: 3rem;
+        padding-right: 0;
+    }
+
+    .social-playground {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .social-links-container {
+        margin: auto;
+    }
+
+    .form {
+        padding: 2rem;
+    }
+
+    .form-tagline {
+        font-size: 0.8rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .para1 {
+        font-size: 1.5rem;
+        color: var(--color-7);
+    }
+
+    .para2 {
+        font-weight: 0600;
+        font-size: 2rem;
+        color: var(--color-5);
+    }
+
+    .para3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: var(--color-6);
+    }
+
+    .bottons {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .btn-1 {
+        height: 2.5rem;
+        width: 8rem;
+        border-radius: 3rem;
+        font-size: 1rem;
+    }
+
+    .btn-2 {
+        height: 2.5rem;
+        width: 8rem;
+        border-radius: 3rem;
+        font-size: 1rem;
+    }
+
+    .about-head {
+        font-size: 3rem;
+    }
+
+    .about-para {
+        line-height: -2rem;
+        font-size: 0.9rem;
+    }
+
+    .section-title-techstack {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        padding-left: 4rem;
+    }
+
+}
+
+
+/* Very Small Mobile: 375px aur usse chhoti screens ke liye */
+@media (max-width: 375px) {
+
+    /* ✅ Navbar toggle ya icon agar ho toh fix karo (agar hai toh) */
+    .ham-burger {
+        margin-right: 0.5rem;
+    }
+
+    /* ✅ Logo - tight center */
+    .logo {
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* ✅ Hero text */
+    .para1 {
+        font-size: 1.2rem;
+    }
+
+    .para2 {
+        font-size: 1.5rem;
+    }
+
+    .para3 {
+        font-size: 2rem;
+    }
+
+    /* ✅ Buttons smaller */
+    .btn-1,
+    .btn-2 {
+        height: 2rem;
+        width: 6rem;
+        font-size: 0.8rem;
+        border-radius: 2rem;
+    }
+
+    .bottons {
+        gap: 1rem;
+    }
+
+    /* ✅ About Section */
+    .about-head {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .about-para {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        text-align: center;
+        margin: 0 1rem;
+    }
+
+    /* ✅ Section Titles */
+    .section-title,
+    .section-title-techstack,
+    .contact-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    /* ✅ Social Playground & Links */
+    .social-playground {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+    }
+
+    .social-links-container {
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    /* ✅ Contact Items */
+    .about-contact-items {
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.7rem;
+        align-items: center;
+    }
+
+    .contact-items img {
+        height: 1.2rem;
+        width: auto;
+    }
+
+    /* ✅ Contact Form */
+    .form {
+        padding: 1rem;
+    }
+
+    .form-tagline {
+        font-size: 0.7rem;
+    }
+
+    footer p {
+        font-size: 0.6rem;
+    }
+
+}

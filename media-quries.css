@@ -1,0 +1,153 @@
+/* For screens below 997px */
+@media (max-width: 997px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        margin-right: 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        box-shadow: 0px 0px 5rem 0px rgba(0, 0, 0, 0.459);
+        margin-top: 1rem;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgb(255, 255, 255);
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .ham-burger-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: -6rem;
+    }
+
+    .container {
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        margin-left: -5rem;
+    }
+
+    .home {
+        margin-top: -5rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home .text {
+        order: -1;
+        margin-bottom: 0rem;
+    }
+
+    .tech-stack {
+        margin-bottom: 0rem;
+    }
+
+    .text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-head {
+        padding-left: 0rem;
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .about-para {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-right: 2rem;
+        margin: auto;
+    }
+
+    .about-image {
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.5rem;
+        margin-top: -2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-contact-items {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 565px) {
+    .logo {
+        margin-right: -5rem;
+    }
+
+    .ham-burger-logo {
+        margin-left: 2.8rem;
+    }
+
+    .about-head {
+        font-size: 4rem;
+        margin-right: 4rem;
+    }
+
+    .about-para {
+        padding-right: 4.5rem;
+    }
+
+    .about-image {
+        padding-right: 4.5rem;
+        height: auto;
+        width: 30rem;
+
+    }
+
+    .contact-items {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-contact-items {
+        margin-right: 3.5rem;
+    }
+
+    .contact-items-para {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+@media (max-width: 420px) {
+    .logo {
+        margin-right: -10rem;
+    }
+
+    .ham-burger-logo {
+        margin-left: 3.6rem;
+    }
+
+
+}
