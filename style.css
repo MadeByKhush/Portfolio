@@ -757,6 +757,16 @@ footer {
   /* border: 1px solid #d3d3d3; */
 }
 
-footer p {
-  margin: 0.5rem 0;
+footer {
+  font-size: 1rem;
+  text-align: center;  
+  padding: 20px;      
+  width: 100%;
+  position: absolute;
 }
+
+footer p {
+  margin: 0; 
+  text-align: center;  
+}
+
