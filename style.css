@@ -22,10 +22,12 @@
   --color-4: #000000;
   --color-5: #2edc6d;
   --color-6: #ffffff;
-  --color-7: #9c9c9c; 
+  --color-7: #9c9c9c;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -34,9 +36,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.main
-{
+
+.main {
   flex: 1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -73,11 +79,35 @@ ul {
 }
 
 .logo {
-  color: var(--color-5);
   font-size: 2rem;
   font-weight: 500;
   margin-left: 2rem;
+
+  position: relative;
+  display: inline-block;
+  color: #2edc6d;
+  /* Base green color */
+
+  /* Shine animation layer */
+  background: linear-gradient(to right, #ccc 0%, #2edc6d 10%, #888 20%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 5s linear infinite;
 }
+
+@keyframes shine {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
 
 nav ul {
   display: flex;
@@ -232,15 +262,19 @@ nav ul a:hover {
   0% {
     box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0);
   }
+
   25% {
     box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
   }
+
   50% {
     box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.8);
   }
+
   75% {
     box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
   }
+
   100% {
     box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0);
   }
@@ -370,8 +404,7 @@ nav ul a:hover {
   color: var(--color-7);
 }
 
-.about-image-container
-{
+.about-image-container {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -440,6 +473,7 @@ nav ul a:hover {
   margin-bottom: -4rem;
   color: var(--color-6);
 }
+
 .section-title-techstack {
   font-size: 8rem;
   margin-bottom: -4rem;
@@ -615,14 +649,13 @@ nav ul a:hover {
 }
 
 
-.social-links-container
-{
+.social-links-container {
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
 }
 
-.social-links{
+.social-links {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -642,9 +675,12 @@ nav ul a:hover {
   border: 1px solid var(--color-2);
   display: flex;
   flex-direction: column;
-  gap: 0.8rem; /* Slightly more gap for breathing space */
-  box-shadow: 0 0 20px 3px rgba(46, 220, 110, 0.4); /* Subtle glow */
-  background: #1a1a1a; /* Optional: neat dark bg for form */
+  gap: 0.8rem;
+  /* Slightly more gap for breathing space */
+  box-shadow: 0 0 20px 3px rgba(46, 220, 110, 0.4);
+  /* Subtle glow */
+  background: #1a1a1a;
+  /* Optional: neat dark bg for form */
 }
 
 /* --------------------------
@@ -654,7 +690,8 @@ nav ul a:hover {
 .label-purpose {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--color-7); /* Fix: added var */
+  color: var(--color-7);
+  /* Fix: added var */
 }
 
 .form-tagline {
@@ -698,9 +735,8 @@ nav ul a:hover {
   transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-#message
-{
-    padding-top: 1rem;
+#message {
+  padding-top: 1rem;
 }
 
 .input-fields:focus,
@@ -712,12 +748,14 @@ nav ul a:hover {
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(156, 156, 156, 0.7); /* consistent grey placeholder */
+  color: rgba(156, 156, 156, 0.7);
+  /* consistent grey placeholder */
 }
 
 /* For message textarea */
 #message {
-  height: 5rem; /* more height for messages */
+  height: 5rem;
+  /* more height for messages */
   resize: vertical;
 }
 
@@ -759,15 +797,15 @@ footer {
 
 footer {
   font-size: 1rem;
-  text-align: center;  
-  padding: 20px;      
+  text-align: center;
+  padding: 20px;
   width: 100%;
   position: absolute;
 }
 
 footer p {
-  margin: 0; 
-  text-align: center;  
+  margin: 0;
+  text-align: center;
 }
 
 /* Global Scrollbar Styling */
@@ -783,3 +821,4 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background: transparent;
 }
+
